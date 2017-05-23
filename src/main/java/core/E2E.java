@@ -30,7 +30,7 @@ public String[][] a2d() throws IOException {
 	b.close();
 	String s2d[][] = new String[lines][columns];
 	b = new BufferedReader(new FileReader(csvFile));
-		WebDriver driver = new HtmlUnitDriver();
+		WebDriver d = new HtmlUnitDriver();
 	int i = 0;
 	while ((line = b.readLine()) != null) {
 		
