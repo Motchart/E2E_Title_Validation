@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class E2E {
 public String[][] a2d() throws IOException {
@@ -30,7 +30,7 @@ public String[][] a2d() throws IOException {
 	b.close();
 	String s2d[][] = new String[lines][columns];
 	b = new BufferedReader(new FileReader(csvFile));
-	WebDriver d = new FirefoxDriver();
+		WebDriver driver = new HtmlUnitDriver();
 	int i = 0;
 	while ((line = b.readLine()) != null) {
 		
